@@ -1,0 +1,19 @@
+{
+  "name": "@yi-ui/docs",
+  "version": "1.0.5",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "vitepress": "^1.0.1"
+  }
+}

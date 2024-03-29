@@ -1,0 +1,47 @@
+{
+  "name": "yi-ui",
+  "type": "module",
+  "version": "1.0.5",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npx simple-git-hooks",
+    "clear": "rimraf packages/**/dist",
+    "build": "pnpm run clear && pnpm -r --filter=./packages/** run build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "changeset": "changeset && changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.9.0",
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@types/node": "^20.11.30",
+    "eslint": "^8.57.0",
+    "lint-staged": "^15.2.2",
+    "rimraf": "^5.0.5",
+    "simple-git-hooks": "^2.11.0",
+    "typescript": "^5.4.3"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "npx commitlint --edit ${1}"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,json}": [
+      "pnpm run lint",
+      "pnpm run lint:fix"
+    ]
+  }
+}
