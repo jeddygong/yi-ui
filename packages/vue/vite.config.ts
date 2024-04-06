@@ -1,6 +1,7 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import dts from 'vite-plugin-dts'
 
 const projectRootDir = resolve(__dirname)
@@ -9,6 +10,7 @@ const projectRootDir = resolve(__dirname)
 export default defineConfig({
   plugins: [
     vue(),
+    vueJsx(),
     dts({
       tsconfigPath: 'tsconfig.build.json',
       cleanVueFileName: true,
@@ -25,6 +27,17 @@ export default defineConfig({
       name: 'yi-ui',
       fileName: 'index',
       entry: resolve(__dirname, 'src/index.ts'),
+    },
+    rollupOptions: {
+      // 不捆绑外部依赖
+      external: ['vue', '@floating-ui/vue'],
+      output: {
+        // 提供在 UMD 构建中使用的全局变量
+        globals: {
+          'vue': 'Vue',
+          '@floating-ui/vue': '@floating-ui/vue',
+        },
+      },
     },
   },
 })

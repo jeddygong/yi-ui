@@ -2,6 +2,7 @@
   "name": "yi-ui",
   "type": "module",
   "version": "1.0.5",
+  "private": true,
   "description": "",
   "author": "",
   "license": "ISC",
@@ -9,15 +10,20 @@
   "main": "index.js",
   "scripts": {
     "prepare": "npx simple-git-hooks",
+    "dev": "pnpm -C playground/vue3 dev",
     "test": "pnpm -r --filter=./packages/** run test",
     "test:vue": "pnpm --filter=./packages/vue test",
     "clear": "rimraf packages/**/dist",
     "build": "pnpm run clear && pnpm -r --filter=./packages/** run build",
+    "build:watch": "pnpm run build --watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "changeset": "changeset && changeset version",
     "release": "pnpm build && pnpm release:only",
     "release:only": "changeset publish"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.21"
   },
   "dependencies": {
     "@floating-ui/vue": "^1.0.6",
@@ -35,6 +41,7 @@
     "@types/jsdom": "^21.1.6",
     "@types/node": "^20.11.30",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
     "@vue/test-utils": "^2.4.5",
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.57.0",
@@ -48,6 +55,7 @@
     "vitest": "^1.4.0",
     "vitest-axe": "^0.1.0",
     "vitest-canvas-mock": "^0.3.3",
+    "vue": "^3.4.21",
     "vue-tsc": "^2.0.10"
   },
   "commitlint": {
