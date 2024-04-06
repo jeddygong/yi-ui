@@ -1,17 +1,6 @@
-const a = '1111'
+export * from './Popper'
+export * from './Primitive'
 
-const b = '2222'
-
-const c = '3333'
-
-const d = '4444'
-
-function fn() {
-  console.log('fn')
-}
-
-function add(a: number, b: number) {
+export function add(a: number, b: number) {
   return a + b
 }
-
-export { a, b, c, d, fn, add }

@@ -5,6 +5,7 @@ export default antfu({
   rules: {
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
     '@typescript-eslint/ban-ts-comment': 'warn',
+    '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
     'import/first': 'off',
     'import/order': 'off',

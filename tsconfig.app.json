@@ -9,9 +9,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["src/*"]
-      // "@iconify/vue": ["../../.histoire/node_modules/@iconify/vue"],
-      // "@vue/shared": ["node_modules/@vue/shared"]
+      "@/*": ["package/vue/src/*"],
+      "@yi-ui/*": ["packages/*"]
     },
     "resolveJsonModule": true,
     "strict": true,
@@ -22,13 +21,20 @@
     "skipLibCheck": true
   },
   "include": [
-    "env.d.ts",
-    "src/**/*",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
+    "packages",
+    "packages/*",
+    "packages/.vitepress/components/*.vue",
+    "packages/.vitepress/*.ts",
+    "meta",
+    "vitest.config.ts",
+    "*.d.ts"
   ],
   "exclude": [
-    "src/**/*.test.ts"
+    "node_modules",
+    "**/**/*.md",
+    "**/dist",
+    "packages/.test",
+    "packages/_docs",
+    "dist"
   ]
 }

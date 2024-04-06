@@ -21,19 +21,10 @@
   },
   "scripts": {
     "build": "pnpm type-check && vite build",
-    "type-check": "vue-tsc -p tsconfig.json --noEmit",
+    "type-check": "vue-tsc -p tsconfig.check.json --noEmit",
     "test": "vitest"
   },
-  "devDependencies": {
-    "@tsconfig/node18": "^18.2.3",
-    "@vitejs/plugin-vue": "^5.0.4",
-    "@vue/tsconfig": "^0.5.1",
-    "@vueuse/core": "^10.9.0",
-    "typescript": "^5.4.3",
-    "vite": "^5.2.6",
-    "vite-plugin-dts": "^3.7.3",
-    "vitest": "^1.4.0",
-    "vue": "^3.4.21",
-    "vue-tsc": "^2.0.7"
+  "peerDependencies": {
+    "vue": "^3.4.21"
   }
 }
