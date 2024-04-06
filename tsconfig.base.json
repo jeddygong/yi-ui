@@ -9,32 +9,16 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["package/vue/src/*"],
+      "@/*": ["packages/vue/src/*"],
       "@yi-ui/*": ["packages/*"]
     },
     "resolveJsonModule": true,
+    "types": ["node", "jsdom", "@testing-library/jest-dom"],
     "strict": true,
     "declaration": false,
     "outDir": "dist",
     "sourceMap": true,
     "esModuleInterop": true,
     "skipLibCheck": true
-  },
-  "include": [
-    "packages",
-    "packages/*",
-    "packages/.vitepress/components/*.vue",
-    "packages/.vitepress/*.ts",
-    "meta",
-    "vitest.config.ts",
-    "*.d.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/**/*.md",
-    "**/dist",
-    "packages/.test",
-    "packages/_docs",
-    "dist"
-  ]
+  }
 }

@@ -11,24 +11,25 @@ export default defineConfig({
       '@': r('./src'),
     },
   },
-  // test: {
-  //   environment: 'jsdom',
-  //   globals: true,
-  //   exclude: ['**/node_modules/**'],
-  //   include: ['./**/*.test.{ts,js}'],
-  //   coverage: {
-  //     provider: 'istanbul', // or 'v8'
-  //   },
-  //   setupFiles: './vitest.setup.ts',
-  //   server: {
-  //     deps: {
-  //       inline: ['vitest-canvas-mock'],
-  //     },
-  //   },
-  //   environmentOptions: {
-  //     jsdom: {
-  //       resources: 'usable',
-  //     },
-  //   },
-  // },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    exclude: ['**/node_modules/**'],
+    include: ['./**/*.test.{ts,js}'],
+    coverage: {
+      provider: 'istanbul', // or 'v8'
+    },
+    setupFiles: './vitest.setup.ts',
+    server: {
+      deps: {
+        // 看情况是不是要删除，暂时没用到
+        inline: ['vitest-canvas-mock'],
+      },
+    },
+    environmentOptions: {
+      jsdom: {
+        resources: 'usable',
+      },
+    },
+  },
 })
