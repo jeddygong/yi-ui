@@ -9,6 +9,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
+      "@/*": ["packages/vue/src/*"],
       "@yi-ui/*": ["packages/*"]
     },
     "resolveJsonModule": true,

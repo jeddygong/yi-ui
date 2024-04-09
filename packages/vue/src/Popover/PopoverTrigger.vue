@@ -16,8 +16,6 @@ const props = withDefaults(defineProps<PopoverTriggerProps>(), {
 })
 
 const rootContext = injectPopoverRootContext()
-console.log('rootContext', rootContext)
-console.log('PopperAnchor', PopperAnchor)
 
 const { forwardRef, currentElement: triggerElement } = useForwardExpose()
 
