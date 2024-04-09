@@ -3,6 +3,10 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@yi-ui/*": ["../../packages/*"]
+    },
     "outDir": "dist"
   },
   "include": [

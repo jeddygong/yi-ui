@@ -11,6 +11,8 @@
   "scripts": {
     "prepare": "npx simple-git-hooks",
     "dev": "pnpm -C playground/vue3 dev",
+    "play:vue": "pnpm -C playground/vue3 dev",
+    "play:nuxt": "pnpm -C playground/nuxt dev",
     "test": "pnpm -r --filter=./packages/** run test",
     "test:vue": "pnpm --filter=./packages/vue test",
     "clear": "rimraf packages/**/dist",

@@ -1,20 +1,16 @@
 <script setup lang="ts">
-import { PopoverRoot } from '@yi-ui/vue'
+import { PopoverRoot, PopoverTrigger } from '@yi-ui/vue'
 import { ref } from 'vue'
 
 const toggleState = ref(false)
-
-function handleVisible() {
-  toggleState.value = !toggleState.value
-}
 </script>
 
 <template>
   <PopoverRoot v-model:open="toggleState">
     <!-- PopoverTrigger -->
-    <button @click="handleVisible">
+    <PopoverTrigger>
       点击显示/隐藏
-    </button>
+    </PopoverTrigger>
 
     <!-- PopoverContent -->
     <ul v-if="toggleState">
