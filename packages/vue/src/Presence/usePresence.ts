@@ -1,5 +1,5 @@
 import { type Ref, computed, nextTick, onUnmounted, ref, watch } from 'vue'
-import { useStateMachine } from '@/shared'
+import { useStateMachine } from '@yi-ui/shared'
 
 export function usePresence(
   present: Ref<boolean>,

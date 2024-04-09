@@ -11,7 +11,7 @@ import type {
   VNode,
 } from 'vue'
 import { usePresence } from './usePresence'
-import { renderSlotFragments } from '@/shared'
+import { renderSlotFragments } from '@yi-ui/shared'
 import { unrefElement } from '@vueuse/core'
 
 export interface PresenceProps {
