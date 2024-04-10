@@ -4,8 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@yi-ui/*": ["../../packages/*"]
+      "@/*": ["src/*"]
     },
     "outDir": "dist"
   },

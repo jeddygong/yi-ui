@@ -7,3 +7,7 @@ export {
   default as PopoverTrigger,
   type PopoverTriggerProps,
 } from './PopoverTrigger.vue'
+export {
+  default as PopoverContent,
+  type PopoverContentProps,
+} from './PopoverContent.vue'
