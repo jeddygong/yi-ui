@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
 import Popover from './components/Popover.vue'
+// import FloatingUi from './components/FloatingUi.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import Popover from './components/Popover.vue'
     </a>
   </div> -->
   <Popover />
+  <!-- <FloatingUi /> -->
 </template>
 
 <style scoped>

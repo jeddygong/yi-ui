@@ -132,6 +132,9 @@ importers:
 
   playground/vue3:
     dependencies:
+      '@floating-ui/vue':
+        specifier: ^1.0.6
+        version: 1.0.6(vue@3.4.21)
       '@yi-ui/vue':
         specifier: workspace:*
         version: link:../../packages/vue

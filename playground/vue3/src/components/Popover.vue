@@ -4,23 +4,20 @@ import { PopoverContent, PopoverRoot, PopoverTrigger } from '@yi-ui/vue'
 
 <template>
   <PopoverRoot>
-    <!-- PopoverTrigger -->
     <PopoverTrigger>
-      点击显示/隐藏
+      切换县市
     </PopoverTrigger>
 
     <PopoverContent>
       <ul>
-        <li>popover content: 11111</li>
-        <li>popover content: 22222</li>
-        <li>popover content: 33333</li>
-        <li>popover content: 44444</li>
-        <li>popover content: 55555</li>
+        <li>北京市</li>
+        <li>上海市</li>
+        <li>广州市</li>
+        <li>深圳市</li>
       </ul>
     </PopoverContent>
   </PopoverRoot>
 </template>
 
 <style scoped>
-/* Add your component styles here */
 </style>

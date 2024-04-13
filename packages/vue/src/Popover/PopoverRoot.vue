@@ -14,7 +14,7 @@ export interface PopoverRootProps {
   open?: boolean
   /**
    * The modality of the popover. When set to true, interaction with outside elements will be disabled and only popover content will be visible to screen readers.
-   *
+   * 当设置为true时，将禁用与外部元素的交互，并且只有弹出内容对屏幕阅读器可见。
    * @defaultValue false
    */
   modal?: boolean

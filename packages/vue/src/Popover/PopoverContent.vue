@@ -1,53 +1,33 @@
 <script lang="ts">
-// import type {
-//   PopoverContentImplEmits,
-//   PopoverContentImplProps,
-// } from './PopoverContentImpl.vue'
+import type { PopperContentProps } from '@/Popper'
+import type { PrimitiveProps } from '@/Primitive'
 
-// export type PopoverContentEmits = PopoverContentImplEmits
-
-// export interface PopoverContentProps extends PopoverContentImplProps {
-export interface PopoverContentProps {
-  /**
-   * Used to force mounting when more control is needed. Useful when
-   * controlling animation with Vue animation libraries.
-   */
+export interface PopoverContentProps extends PopperContentProps, PrimitiveProps {
   forceMount?: boolean
 }
 </script>
 
 <script setup lang="ts">
 import { injectPopoverRootContext } from './PopoverRoot.vue'
-import { useForwardExpose } from '@yi-ui/shared'
+import { useForwardExpose, useForwardPropsEmits } from '@yi-ui/shared'
+import { PopperContent } from '@/Popper'
 import { Presence } from '@/Presence'
 
-// const props = defineProps<PopoverContentProps>()
-// const emits = defineEmits<PopoverContentEmits>()
+const props = defineProps<PopperContentProps>()
 
 const rootContext = injectPopoverRootContext()
 
-// const forwarded = useForwardPropsEmits(props, emits)
+const forwarded = useForwardPropsEmits(props)
 const { forwardRef } = useForwardExpose()
-
-// rootContext.contentId ||= useId(undefined, 'radix-vue-popover-content')
 </script>
 
 <template>
   <Presence :ref="forwardRef" :present="rootContext.open.value">
-    <!-- <PopoverContentModal
-      v-if="rootContext.modal.value"
+    <PopperContent
       v-bind="forwarded"
       :ref="forwardRef"
     >
       <slot />
-    </PopoverContentModal>
-    <PopoverContentNonModal
-      v-else
-      v-bind="forwarded"
-      :ref="forwardRef"
-    >
-      <slot />
-    </PopoverContentNonModal> -->
-    <slot />
+    </PopperContent>
   </Presence>
 </template>

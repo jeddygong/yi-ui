@@ -12,7 +12,7 @@ import { Primitive } from '@/Primitive'
 import { PopperAnchor } from '@/Popper'
 
 const props = withDefaults(defineProps<PopoverTriggerProps>(), {
-  as: 'a',
+  as: 'button',
 })
 
 const rootContext = injectPopoverRootContext()

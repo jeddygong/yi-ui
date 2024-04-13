@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@floating-ui/vue": "^1.0.6",
     "@yi-ui/vue": "workspace:*",
     "vue": "^3.4.21"
   },
