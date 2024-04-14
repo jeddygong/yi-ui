@@ -13,6 +13,8 @@
     "dev": "pnpm run build --watch",
     "play:vue": "pnpm -C playground/vue3 dev",
     "play:nuxt": "pnpm -C playground/nuxt dev",
+    "docs:dev": "pnpm -C docs docs:dev",
+    "docs:build": "pnpm -C docs docs:build",
     "test": "pnpm -r --filter=./packages/** run test",
     "test:vue": "pnpm --filter=./packages/vue test",
     "clear": "rimraf packages/**/dist",
