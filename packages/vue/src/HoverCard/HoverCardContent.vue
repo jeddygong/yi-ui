@@ -17,7 +17,7 @@ import { injectHoverCardRootContext } from './HoverCardRoot.vue'
 import { excludeTouch } from './utils'
 import { Presence } from '@/Presence'
 import HoverCardContentImpl from './HoverCardContentImpl.vue'
-import { useForwardExpose, useForwardPropsEmits } from '@/shared'
+import { useForwardExpose, useForwardPropsEmits } from '@yi-ui/shared'
 
 const props = defineProps<HoverCardContentProps>()
 const emits = defineEmits<HoverCardContentEmits>()

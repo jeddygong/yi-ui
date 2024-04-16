@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { PopperArrowProps } from '@/Popper'
-import { useForwardExpose } from '@/shared'
+import { useForwardExpose } from '@yi-ui/shared'
 
 export interface HoverCardArrowProps extends PopperArrowProps {}
 </script>

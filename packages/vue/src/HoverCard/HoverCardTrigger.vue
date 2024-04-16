@@ -8,7 +8,7 @@ export interface HoverCardTriggerProps extends PrimitiveProps {}
 import { injectHoverCardRootContext } from './HoverCardRoot.vue'
 import { Primitive } from '@/Primitive'
 import { PopperAnchor } from '@/Popper'
-import { useForwardExpose } from '@/shared'
+import { useForwardExpose } from '@yi-ui/shared'
 import { excludeTouch } from './utils'
 
 withDefaults(defineProps<HoverCardTriggerProps>(), {
