@@ -23,8 +23,7 @@
   },
   "scripts": {
     "build": "pnpm type-check && vite build",
-    "type-check": "vue-tsc -p tsconfig.check.json --noEmit",
-    "test": "vitest"
+    "type-check": "vue-tsc -p tsconfig.check.json --noEmit"
   },
   "peerDependencies": {
     "vue": "^3.4.21"

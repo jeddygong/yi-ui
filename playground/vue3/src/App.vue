@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
-import Popover from './components/Popover.vue'
+import HoverCard from './components/HoverCard.vue'
+// import Popover from './components/Popover.vue'
 // import FloatingUi from './components/FloatingUi.vue'
 </script>
 
@@ -13,7 +14,7 @@ import Popover from './components/Popover.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div> -->
-  <Popover />
+  <HoverCard />
   <!-- <FloatingUi /> -->
 </template>
 
