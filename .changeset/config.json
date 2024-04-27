@@ -8,7 +8,6 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@yi-ui/playground",
-    "@yi-ui/docs"
+    "@yi-ui/playground"
   ]
 }
