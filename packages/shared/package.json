@@ -8,6 +8,9 @@
   "main": "index.ts",
   "scripts": {
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "vue": "^3.4.21"
   }

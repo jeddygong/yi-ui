@@ -1,13 +1,16 @@
 {
   "name": "@yi-ui/docs",
   "type": "module",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "private": true,
   "description": "",
   "author": "",
   "license": "ISC",
   "keywords": [],
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   }
