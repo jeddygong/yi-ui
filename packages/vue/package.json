@@ -5,6 +5,15 @@
   "description": "",
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/jeddygong/yi-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeddygong/yi-ui",
+    "directory": "packages/vue"
+  },
+  "bugs": {
+    "url": "https://github.com/jeddygong/yi-ui"
+  },
   "keywords": [],
   "sideEffects": false,
   "exports": {
