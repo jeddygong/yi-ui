@@ -87,7 +87,7 @@ EOF
 
 ##############  4.生成文档模版
 
-cat > $DOCS_PATH/components/$INPUT_NAME.md <<EOF
+cat > $DOCS_PATH/components/$NAME.md <<EOF
 ---
 title: $NAME
 ---
