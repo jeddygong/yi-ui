@@ -1,0 +1,35 @@
+{
+  "name": "@yi-ui/resolvers",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "pnpm run build --watch --ignore-watch examples",
+    "build": "tsup src/index.ts --dts --format cjs,esm"
+  },
+  "dependencies": {
+    "unplugin-vue-components": "^0.25.2"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2"
+  }
+}
