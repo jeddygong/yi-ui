@@ -1,0 +1,38 @@
+{
+  "name": "@yi-ui/nuxt",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/module.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/module.cjs",
+  "module": "./dist/module.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run dev:prepare && nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
+  },
+  "dependencies": {
+    "@nuxt/kit": "npm:@nuxt/kit@latest",
+    "@yi-ui/vue": "workspace:*",
+    "unplugin-vue-components": "^0.25.2"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.2.0",
+    "@nuxt/module-builder": "^0.6.0",
+    "@nuxt/schema": "latest",
+    "nuxt": "^3.11.2"
+  }
+}
