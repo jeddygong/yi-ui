@@ -1,7 +1,7 @@
 {
   "name": "@yi-ui/nuxt",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -19,6 +19,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "pnpm run dev:prepare && nuxt-module-build",
     "dev": "nuxi dev playground",
