@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
-import HoverCard from './components/HoverCard.vue'
+import HoverCard from './components/HoverCardTest.vue'
 // import Popover from './components/Popover.vue'
 // import FloatingUi from './components/FloatingUi.vue'
 </script>

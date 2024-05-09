@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { PopoverContent, PopoverRoot, PopoverTrigger } from '@yi-ui/vue'
 </script>
 
@@ -20,4 +20,4 @@ import { PopoverContent, PopoverRoot, PopoverTrigger } from '@yi-ui/vue'
 </template>
 
 <style scoped>
-</style>
+</style> -->
